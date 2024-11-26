@@ -210,7 +210,29 @@ main section{
     margin-top: 20px;
     text-align: center;
 }
-
 .container {
-    padding: 15px;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 1200px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.tamano div {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.tamano div:hover {
+  background-color: lightgray; /* Cambia el color de fondo */
+  color: #ff5733; /* Cambia el color del texto */
+  transform: scale(1.05); /* Hace un pequeño zoom */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
 }
